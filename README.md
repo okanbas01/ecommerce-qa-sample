@@ -1,5 +1,7 @@
 # E-Ticaret QA Örnek Çalışması – Playwright Regresyon Testleri
 
+[![Playwright Tests](https://github.com/okanbas01/ecommerce-qa-sample/actions/workflows/playwright.yml/badge.svg)](https://github.com/okanbas01/ecommerce-qa-sample/actions/workflows/playwright.yml)
+
 Herkese açık demo e-ticaret sitesi [automationexercise.com](https://automationexercise.com) üzerinde yaptığım test çalışmasının otomasyon kodu.
 
 📄 **Test raporu, bug dökümü ve e-ticaret yönetim paneli test planı:** [QA-Test-Raporu-ve-Test-Plani.pdf](./QA-Test-Raporu-ve-Test-Plani.pdf)
@@ -44,6 +46,8 @@ npx playwright show-report
 
 Hata anında ekran görüntüsü ve trace kaydı otomatik alınır; HTML rapordan adım adım incelenebilir.
 
+Testler her push'ta ve haftalık olarak GitHub Actions üzerinde otomatik çalışır. HTML rapor her çalıştırmanın **Artifacts** bölümünden indirilebilir.
+
 ## Proje yapısı
 
 ```
@@ -53,6 +57,7 @@ tests/
   catalog.spec.ts    # Katalog ve ürün detay testleri
   cart.spec.ts       # Sepet testleri
 playwright.config.ts
+.github/workflows/playwright.yml   # CI: GitHub Actions
 ```
 
 ## Hazırlayan
