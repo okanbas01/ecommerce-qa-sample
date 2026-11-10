@@ -1,0 +1,13 @@
+{
+  "name": "ecommerce-qa-sample",
+  "version": "1.0.0",
+  "description": "Playwright regression tests for bugs found on automationexercise.com (QA sample work)",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
